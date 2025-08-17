@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownloadShit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="inputContainer">
+            <h1>Вставляй свою ссылку пидор</h1>
+            <div class="input-group">
+                <input type="text" id="videoUrl" placeholder="YouTube или MP4 ссылка">
+                <button onclick="playVideo()">Играть</button>
+            </div>
+        </div>
+        <div id="player"></div>
+        <div id="controls" class="hidden">
+            <button onclick="goBack()">Назад</button>
+            <button onclick="resizePlayer('increase')">Увеличить</button>
+            <button onclick="resizePlayer('decrease')">Уменьшить</button>
+            <button onclick="downloadVideo()">Скачать</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
